@@ -1,0 +1,294 @@
+/*
+This page created by Yusuf Emre ALBAYRAK , 2023
+Google main page responsive clone
+
+~My Links~
+https://www.linkedin.com/in/yusuf-emre-albayrak-a3627a222/
+https://twitter.com/ysfemrealbyrk
+https://github.com/ysfemreAlbyrk
+https://www.instagram.com/ysfemrealbyrk/
+*/
+/* 
+~colors~
+#f2f2f2
+#1a73e8
+#1b66c9
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #000000DE;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/*********************** header start **********************/
+header {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    height: 60px;
+    flex-direction: row-reverse;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 0px 14px 0px 32px;
+}
+header nav a {
+    margin-left: 15px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.appsbtn {
+    padding: 8px;
+    height: 24px !important;
+    width: 24px  !important;
+    margin-left: 15px;
+    margin-right:15px ;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.appsbtn:hover {
+    background-color: #f0f0f0;
+}
+.appssvg {
+    height: 24px !important;
+    width: 24px  !important;
+    color: #5f6368;
+    fill: currentColor;
+}
+.SignInbtn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 9px 23px;
+    font-weight: 500;
+    line-height: 16px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.SignInbtn:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 0 1px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 1px 0 rgb(0 0 0 / 15%);
+    background: #1b66c9;
+    -webkit-box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+/*********************** header end **********************/
+/********************* container 1 start ************************/
+.container_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 215px;
+}
+.container_1 img {
+    max-height: 92px;
+    position: relative;
+    height: 100%;
+    margin-top: auto;
+    object-fit: contain;
+    object-position: center bottom;
+}
+/********************* container 1 end ************************/
+/********************* container 2 start **********************/
+.container_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-height:160px ;
+}
+/*search area*/
+form {
+    background-color: #fff;
+    border-radius: 24px;
+    height: 44px;
+    border:1px solid #dfe1e5;
+    margin: 0 auto;
+    width: 590px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+form img {
+    height: 16px;
+    width:  16px;
+    padding-left: 20px;
+}
+form input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding-left:20px;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    width: 100%;
+}
+form input:focus ~ form {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.voicesrc {
+    height: 32px;
+    width:  32px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/*form button*/
+.form_buttons {
+    height: 70px;
+    padding-top: 18px;
+}
+.form_buttons input {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.form_buttons input:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+/********************* container 2 end **********************/
+/********************* container 3 start **********************/
+.container_3 {
+    height: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+/********************* container 3 end **********************/
+/********************* bottom containers start *****************/
+p {
+    padding: 15px;
+    font-size: 15px;
+}
+.links {
+    display: flex;
+    height: 100%; 
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.links svg {
+    height:32px ;
+    transition: all 0.2s;
+}
+.links svg:hover {
+    transform: scale(130%);
+    
+}
+.linkedin:hover {
+    filter:
+    drop-shadow(0px 3px 0px #fbbc05)
+    drop-shadow(0px 3px 0px #34a853)
+    drop-shadow(0px 3px 1px #ea4335);
+}
+.twitter:hover {
+    filter:
+    drop-shadow(0px 3px 0px #34a853)
+    drop-shadow(0px 3px 0px #ea4335)
+    drop-shadow(0px 3px 1px #4285f4);
+}
+.github:hover {
+    filter:
+    drop-shadow(0px 3px 0px #ea4335)
+    drop-shadow(0px 3px 0px #4285f4)
+    drop-shadow(0px 3px 1px #fbbc05);
+}
+.instagram:hover {
+    filter:
+    drop-shadow(0px 3px 0px #4285f4)
+    drop-shadow(0px 3px 0px #fbbc05)
+    drop-shadow(0px 3px 1px #34a853);
+}
+/********************* bottom containers end *******************/
+/********************* footer start **********************/
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid #dadce0;
+}
+footer a{
+    padding: 15px;
+    font-size: 15px;
+    color: #70757a;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.footer_left {
+    display: flex;
+    justify-content: center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+}
+.footer_right {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 1200px) {
+    footer {
+        justify-content: space-evenly !important;
+        flex-direction: column;
+    }
+}
+.info p span {
+    font-weight: 700;
+    color:  transparent;
+    background: black;
+    background-image: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(66,133,244,1) 25%, rgba(251,188,5,1) 25%, rgba(251,188,5,1) 50%, rgba(52,168,83,1) 50%, rgba(52,168,83,1) 75%, rgba(234,67,53,1) 75%, rgba(234,67,53,1) 100%);
+    background-clip:text;
+    -webkit-background-clip:text;
+}
+/********************** footer end *********************/
